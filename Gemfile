@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
 
+#Dinifir perfis, papeis de usuarios
+gem 'cancancan'
 #Rails Admin
 gem 'rails_admin', '~> 3.0'
 #Autenticacaco
