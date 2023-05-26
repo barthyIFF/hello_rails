@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  data: 2023-05-25
+  inicio: 2023-05-25 18:06:46
+  fim: 2023-05-25 18:06:46
+  distancia: 1.5
+  user: one
+
+two:
+  titulo: MyString
+  data: 2023-05-25
+  inicio: 2023-05-25 18:06:46
+  fim: 2023-05-25 18:06:46
+  distancia: 1.5
+  user: two

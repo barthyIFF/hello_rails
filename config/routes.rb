@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :adms
+  resources :atividades
   #get 'users/index'
   #get 'users/show'
   #get 'users/new'

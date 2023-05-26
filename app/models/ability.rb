@@ -31,11 +31,12 @@ class Ability
     user ||= User.new
     if user.papel == 'adm'
       can :manage, :all
+      can :access, :rails_admin
     end
     if user.papel == 'atleta'
-      #can [:read, :update, :destroy], Atividade
+      can [:create, :read, :update, :destroy], Atividade
     end
-    if user.papel == 'usuario'
+    if user.papel == 'instrutor'
       can :manage, User
     end
   end
