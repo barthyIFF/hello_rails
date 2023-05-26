@@ -23,11 +23,11 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Exercícios
+                        Atividades
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Cadastrar Novo</a></li>
-                        <li><a class="dropdown-item" href="#">Editar cadastrados</a></li>
+                        <li><a class="dropdown-item" href="/atividades/new">Cadastrar Nova</a></li>
+                        <li><a class="dropdown-item" href="/atividades">Editar cadastradas</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -52,6 +52,10 @@
                 <!--<li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desabilitado</a>
                 </li>-->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin" tabindex="-1" aria-disabled="true">Área do administrador</a>
+                </li>
 
                 <% if user_signed_in? %>
                 <li class="nav-item">

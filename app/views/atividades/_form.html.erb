@@ -1,0 +1,48 @@
+<%= form_with(model: atividade) do |form| %>
+  <% if atividade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(atividade.errors.count, "error") %> prohibited this atividade from being saved:</h2>
+
+      <ul>
+        <% atividade.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.date_select :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inicio %>
+    <%= form.time_select :inicio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fim %>
+    <%= form.time_select :fim %>
+  </div>
+
+  <div class="field">
+    <%= form.label :distancia %>
+    <%= form.text_field :distancia %>
+  </div>
+
+  
+  <!--<div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>-->
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
